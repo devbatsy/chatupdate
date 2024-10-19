@@ -2,7 +2,7 @@ import {__g, __p, __u} from "../../sydneyDom_v2.js"
 
 import { initUser } from "./__init.js";
 
-const socketConnectionLink = "http://localhost:9000";
+const socketConnectionLink = "https://chatupdate.onrender.com";
 let ws;
 
 export const getSocket = () =>{
