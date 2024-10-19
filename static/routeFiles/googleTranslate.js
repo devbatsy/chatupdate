@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded' , e =>{
                 'google_translate_element'
             );
         }
+    googleTranslateElementInit();
     manage_mediaQuery(window.innerWidth);
     
     const translateElement = document.getElementById('google_translate_element');
