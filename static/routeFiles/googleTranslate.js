@@ -9,19 +9,20 @@ document.addEventListener('DOMContentLoaded' , e =>{
                 'google_translate_element'
             );
         }
-    googleTranslateElementInit();
     manage_mediaQuery(window.innerWidth);
     
     const translateElement = document.getElementById('google_translate_element');
     
     let i = 0;
 
-    let interval = setInterval(() => {
+        let interval = setInterval(() => {
         let selectMainEl = translateElement.getElementsByTagName('select');
+
+        googleTranslateElementInit();
 
         i++;
 
-        if(i > 3)
+        if(i > 10)
         {
             __v['translate_int_text'].innerHTML = 'connection failed , reloading...';
 
