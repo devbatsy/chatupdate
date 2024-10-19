@@ -19,8 +19,13 @@
             {pageLanguage: 'en'},
             'google_translate_element'
         );
-    } 
+    }
+
+    const randomParam = `?rand=${Math.random() + new Date().getTime()}`;
+    console.log(randomParam)
+    const translatorScript = document.createElement('script');
+    translatorScript.src = `https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit${randomParam}`;
+    document.body.appendChild(translatorScript);
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&nocache=" + new Date().getTime()></script>
 </body>
 </html>
