@@ -3,6 +3,12 @@ import { __c, __m, __sC, __SYD , __v , __g , __u , manage_mediaQuery} from "../.
 import {initUser} from "./__init.js"
 
 document.addEventListener('DOMContentLoaded' , e =>{
+    googleTranslateElementInit = () => {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
     manage_mediaQuery(window.innerWidth);
     
     const translateElement = document.getElementById('google_translate_element');
