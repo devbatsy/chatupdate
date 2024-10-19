@@ -14,7 +14,7 @@ window.onload = e =>{
 
         i++;
 
-        if(i > 3)
+        if(i > 15)
         {
             __v['translate_int_text'].innerHTML = 'connection failed , reloading...';
 
