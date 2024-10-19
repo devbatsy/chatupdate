@@ -2,7 +2,7 @@ import { __c, __m, __sC, __SYD , __v , __g , __u , manage_mediaQuery} from "../.
 
 import {initUser} from "./__init.js"
 
-window.onload = e =>{
+document.addEventListener('DOMContentLoaded' , e =>{
     manage_mediaQuery(window.innerWidth);
     
     const translateElement = document.getElementById('google_translate_element');
@@ -14,7 +14,7 @@ window.onload = e =>{
 
         i++;
 
-        if(i > 15)
+        if(i > 3)
         {
             __v['translate_int_text'].innerHTML = 'connection failed , reloading...';
 
@@ -109,4 +109,5 @@ window.onload = e =>{
         console.log('retrying translate ...')
     }, 1000);
 
-}
+})
+// window.onload = e =>
