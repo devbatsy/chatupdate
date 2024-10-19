@@ -33,9 +33,14 @@ async function write_doc_collection({data = {}} = {})//collection = {collectionN
 
 async function read_doc_collection({data = {}} = {})
 {
-    const collection = firebaseInit_var.fireStoreDB.collection(`${data.collection}`).doc(`${data.document}`);
+    try{
+        const collection = firebaseInit_var.fireStoreDB.collection(`${data.collection}`).doc(`${data.document}`);
 
-    const docs = await collection.get();
-
-    return docs.data().data;
+        const docs = await collection.get();
+    
+        return docs.data().data;
+    }catch(err)
+    {
+        console.log(err.message)
+    }
 }
