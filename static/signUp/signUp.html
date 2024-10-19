@@ -7,26 +7,20 @@
     <link rel="stylesheet" href="./signUp.css">
     <link rel="stylesheet" href="../routeFiles/route.css">
 
-        <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            {pageLanguage: 'en'},
-            'google_translate_element'
-        );
-    }
-
-    const randomParam = "";//`?rand=${Math.random() + new Date().getTime()}`;
-    console.log(randomParam)
-    const translatorScript = document.createElement('script');
-    translatorScript.src = `https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit${randomParam}`;
-    document.body.appendChild(translatorScript);
-    </script>
-
     <script src="https://kit.fontawesome.com/ae60a47ee9.js" crossorigin="anonymous"></script>
         
 </head>
 <body>
     <div id="root"></div>
     <script type="module" src="./signUp.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
